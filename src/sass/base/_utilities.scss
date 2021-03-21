@@ -1,0 +1,22 @@
+.pad-top-50{
+    padding-top: 50px;
+}
+
+.pad-top-20{
+    padding-top: 20px;
+}
+
+img.contained-image{
+    width: 100%;
+}
+
+.item-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    *{
+        width: 100%;
+        column-gap: 0px;
+    }
+}

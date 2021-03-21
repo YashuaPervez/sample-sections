@@ -1,0 +1,20 @@
+.SectionTop{
+    background-color: #101B27;
+    padding: 180px 0px 160px 0px;
+
+    @include respond(tablet){
+        padding-bottom: 40px;
+    }
+
+    @include respond(phone){
+        padding: 80px 0px 10px 0px;
+    }
+
+    &-content{
+        color: #fff;
+    }
+}
+
+.SectionTwo{
+    padding: 80px 0px;
+}

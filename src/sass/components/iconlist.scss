@@ -1,0 +1,29 @@
+.IconList{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    @include respond(phone){
+        justify-content: center;
+    }
+
+    &__item{
+        height: 34px;
+        width: 34px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 5px;
+        transition: .2s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}

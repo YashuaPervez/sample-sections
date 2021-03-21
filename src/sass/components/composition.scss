@@ -1,0 +1,49 @@
+.SectionTop-composition{
+    position: relative;
+    text-align: center;
+
+    &-image1, &-image2{
+        position: absolute;
+        width: 65%;
+        transition: .2s;
+
+        @include respond(tablet){
+            width: 70%;
+        }
+
+        @include respond(phone){
+            position: static;
+        }
+
+        &:hover{
+            transform: translateX(10px);
+        }
+    }
+
+    &-image1{
+        top: -10px;
+        left: 0px;
+
+        @include respond(tablet){
+            left: -10px;
+        }
+
+        @include respond(phone){
+            transform: translateX(-20px);
+        }
+    }
+
+    &-image2{
+        top: 220px;
+        left: 100px;
+
+        @include respond(tablet){
+            top: 160px;
+            left: 40px;
+        }
+
+        @include respond(phone){
+            transform: translate(20px, -40px);
+        }
+    }
+}

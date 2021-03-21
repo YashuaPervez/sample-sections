@@ -1,0 +1,20 @@
+.grid{
+    display: flex;
+    max-width: 1226px;
+    margin: 0px auto;
+    column-gap: 16px;
+    row-gap: 26px;
+    padding: 0px 10px;
+
+    @include respond(phone){
+        flex-wrap: wrap;
+    }
+    
+    .col-1-of-2{
+        width: 50%;
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+}
